@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Map Karawang</title>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script >
+			$(document).ready(function(){
+				$("#tombol").click(function() {
+					$(this).after('<p><b>M. Rosyid Ridlo</b></p>');
+				});
+			});
+		</script>
+		<style type="text/css">
+			#container {
+				margin: 0 auto;
+			}
+			body {
+			}
+			h1 {
+				color: #8B5CDD;
+				margin: 0 auto;
+			}
+			#regionName {
+				float: right;
+			}
+			#map {
+				float: left;
+			}
+			#tombol {
+				padding: 10px 15px 11px !important;
+				font-size: 18px !important;
+				background-color: #57d6c7;
+				font-weight: bold;
+				text-shadow: 1px 1px #57D6C7;
+				color: #ffffff;
+				border-radius: 5px;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border: 1px solid #57D6C7;
+				cursor: pointer;
+				box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+				-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+				-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<div id="map" class="peta">
+				<!-- Raphaël JS Map Here -->
+			</div>
+			<div id="regionName">
+				<h1 id="nama_wilayah"></h1>
+			</div>
+		</div>
+		<button id="tombol">Author Click Here !</button>
+		<script src="js/raphael-min.js"></script>
+		<script src="js/map.js"></script>
+	</body>
+</html>
